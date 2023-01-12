@@ -1,38 +1,95 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+body {
   background-color: #282c34;
-  min-height: 100vh;
+  margin-right: 15px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+
+.App {
+  font-family:'Courier New', Courier, monospace;
+  text-align: center;
+  font-size: calc(8px + 2vmin);
+  color:#b0f83be1;
+  text-shadow: 2px 2px #142c30;
+}
+
+.header-logo {
+  width: 100%;
+  object-fit: cover;
+  height: 450px;
+
+}
+
+
+.product-image {
+  width: 150px;
+  height: 180px;
+  margin: 0 auto;
+}
+
+
+.product-bg {
+  background-color: #464a53;
+}
+
+
+.header {
+  width: 100%;
+  position: relative;
+  color: #b0f83be1;
+}
+
+
+.header-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: rgba(0, 0, 0, 0.3); 
 }
 
-.App-link {
-  color: #61dafb;
+.header-title {
+  font-family:'Courier New', Courier, monospace;
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  color: #fde82dc7;
+  text-shadow: 4px 4px #142c30;
+  font-size: 100px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
+.NavMenu {
+  font-family:'Courier New', Courier, monospace;
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  width: 100%;
+  transform: translate(-50%, -50%);
+  text-shadow: 1px 1px #142c30;
+  font-size: 15px;
+}
+
+
+.login-prompt {
+  position: absolute;
+  top: 2%;
+  left: 1%;
+  display: flex;
+  align-items: left;
+  justify-content: left;
+  color: #b0f83be1;
+
+}
+
+
+@media (max-width: 700px) {
+  .header-title {
+    font-size: 50px; /* Reduce font size for smaller screens */
   }
 }
+
